@@ -1,35 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f7f9;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f9;
+    text-align: center;
 }
 
 .container {
-    text-align: center;
     background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    max-width: 600px;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
+    font-size: 36px;
+    color: #6c63ff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.result-summary {
+    background-color: #e6e6f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-summary p {
     font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
 }
 
-.score {
-    font-size: 20px;
-    margin-top: 20px;
+.result-summary .score {
+    font-size: 48px;
+    font-weight: bold;
+    color: #6c63ff;
+    margin-top: 10px;
 }
 
-.time {
+.result-summary .time {
     font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.button-container {
     margin-top: 20px;
+}
+
+.button-container button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #5a53e3;
+    transform: scale(1.05);
+}
+
+.button-container button:active {
+    transform: scale(0.98);
+}
+
+.explanation {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.explanation h3 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.explanation ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.explanation ul li {
+    margin-bottom: 10px;
 }

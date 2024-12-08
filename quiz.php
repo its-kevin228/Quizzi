@@ -2,7 +2,7 @@
 session_start(); 
 
 if (!isset($_SESSION['start_time'])) {
-    $_SESSION['start_time'] = time(); // Enregistre l'heure de début du quiz
+    $_SESSION['start_time'] = time(); 
 }
 
 ?>
@@ -16,108 +16,14 @@ if (!isset($_SESSION['start_time'])) {
     <title>Quiz de Monsieur PHP</title>
    
 </head>
-<style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f7f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
 
-        .container {
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            width: 100%;
-            max-width: 700px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #333;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .timer {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 30px;
-        }
-
-        .question {
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .question h2 {
-            font-size: 22px;
-            color: #444;
-            margin-bottom: 15px;
-        }
-
-        .answers label {
-            display: block;
-            padding: 10px;
-            margin-bottom: 12px;
-            background-color: #f5f5f5;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .answers input {
-            margin-right: 10px;
-        }
-
-        .answers label:hover {
-            background-color: #e3e3e3;
-            transform: translateX(5px);
-        }
-
-        .answers input:checked + label {
-            background-color: #6c63ff;
-            color: #fff;
-        }
-
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #6c63ff;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #5a53e3;
-            transform: scale(1.05);
-        }
-
-        button:active {
-            transform: scale(0.98);
-        }
-
-        .question:last-child {
-            margin-bottom: 0;
-        }
-    </style>
-</head>
 <body>
     <div class="container">
         <h1>Quiz de Monsieur PHP</h1>
         <p class="timer" id="timer">Temps écoulé : 00:00</p>
+
         <form action="result.php" method="post" id="quizForm">
+
             <div class="question">
                 <h2>1. Quel est le rôle principal de PHP ?</h2>
                 <div class="answers">
@@ -173,6 +79,9 @@ if (!isset($_SESSION['start_time'])) {
             <input type="hidden" name="time_taken" id="time_taken">
 
             <button type="submit"><a href="result.php"></a>Soumettre</button>
+            <br>
+            <button onclick="history.go(-1)">Retour</button>
+
         </form>
     </div>
 
