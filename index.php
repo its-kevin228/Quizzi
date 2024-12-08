@@ -7,6 +7,17 @@
     <title>Quiz Monsieur PHP</title>
 </head>
 <body>
-    
+<div class="background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+</div>
+
+<div class="container">
+        <h1>Bienvenue au Quiz de Monsieur PHP</h1>
+        <form action="quiz.php" method="get">
+            <button type="submit">COMMENCER</button>
+        </form>
+    </div>
 </body>
 </html>
