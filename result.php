@@ -48,6 +48,14 @@ $seconds = floor(($time_taken % 60000) / 1000);
                 <li><strong>Question 3 :</strong> La bonne réponse était "$nomVariable;" – En PHP, une variable est déclarée avec un signe dollar suivi de son nom.</li>
             </ul>
         </div>
+       
     </div>
+    <footer>
+  <div class="footer-content">
+    <p>&copy; 2024 Quiz Game. All rights reserved.</p>
+    <p>Made with ❤️ for fun and learning.</p>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -13,6 +13,10 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -104,3 +108,28 @@ h1 {
 .explanation ul li {
     margin-bottom: 10px;
 }
+footer {
+    background-color: rgb(227, 231, 239);
+    color: #0d0101;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+  }
+  
+  footer p:first-child {
+    font-weight: bold;
+  }
+  
+  footer p:last-child {
+    font-style: italic;
+    color: #465255;
+  }

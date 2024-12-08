@@ -79,12 +79,22 @@ if (!isset($_SESSION['start_time'])) {
             <input type="hidden" name="time_taken" id="time_taken">
 
             <button type="submit"><a href="result.php"></a>Soumettre</button>
-            <br>
+            <hr>
+            <hr>
             <button onclick="history.go(-1)">Retour</button>
 
         </form>
+        
     </div>
+    
+    <footer>
+  <div class="footer-content">
+    <p>&copy; 2024 Quiz Game. All rights reserved.</p>
+    <p>Made with ❤️ for fun and learning.</p>
+  </div>
+</footer>
 
 <script src="quiz.js"></script>    
 </body>
+
 </html>
