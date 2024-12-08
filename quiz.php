@@ -25,36 +25,36 @@ if (!isset($_SESSION['start_time'])) {
         <form action="result.php" method="post" id="quizForm">
 
             <div class="question">
-                <h2>1. Quel est le rôle principal de PHP ?</h2>
+                <h2>1. Quel est la capitale du TOGO ?</h2>
                 <div class="answers">
                     <input type="radio" id="q1a" name="q1" value="a">
-                    <label for="q1a">Créer des pages web dynamiques</label>
+                    <label for="q1a">Lomé</label>
                     
                     <input type="radio" id="q1b" name="q1" value="b">
-                    <label for="q1b">Gérer les bases de données uniquement</label>
+                    <label for="q1b">Abidjan</label>
 
                     <input type="radio" id="q1c" name="q1" value="c">
-                    <label for="q1c">Styliser les pages web</label>
+                    <label for="q1c">Kara</label>
 
                     <input type="radio" id="q1d" name="q1" value="d">
-                    <label for="q1d">Gérer les serveurs</label>
+                    <label for="q1d">Tabligbo</label>
                 </div>
             </div>
 
             <div class="question">
-                <h2>2. Quelle est l'extension d'un fichier PHP ?</h2>
+                <h2>2. Que Signifie IAI ?</h2>
                 <div class="answers">
                     <input type="radio" id="q2a" name="q2" value="a">
-                    <label for="q2a">.html</label>
+                    <label for="q2a">Institut Africain d'Informatique</label>
 
                     <input type="radio" id="q2b" name="q2" value="b">
-                    <label for="q2b">.css</label>
+                    <label for="q2b">Institut d'Intelligence Artificiel</label>
 
                     <input type="radio" id="q2c" name="q2" value="c">
-                    <label for="q2c">.php</label>
+                    <label for="q2c">Institut Africain d'ingenierie</label>
 
                     <input type="radio" id="q2d" name="q2" value="d">
-                    <label for="q2d">.js</label>
+                    <label for="q2d">IAI</label>
                 </div>
             </div>
 
@@ -79,9 +79,12 @@ if (!isset($_SESSION['start_time'])) {
             <input type="hidden" name="time_taken" id="time_taken">
 
             <button type="submit"><a href="result.php"></a>Soumettre</button>
+            <button type="reset">Annuler</button>
+
             <hr>
             <hr>
             <button onclick="history.go(-1)">Retour</button>
+            
 
         </form>
         

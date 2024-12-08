@@ -43,8 +43,8 @@ $seconds = floor(($time_taken % 60000) / 1000);
         <div class="explanation">
             <h3>Explication des réponses :</h3>
             <ul>
-                <li><strong>Question 1 :</strong> La bonne réponse était "Créer des pages web dynamiques" – PHP est principalement utilisé pour générer du contenu dynamique sur les pages web.</li>
-                <li><strong>Question 2 :</strong> La bonne réponse était ".php" – Les fichiers PHP ont l'extension .php pour indiquer qu'ils contiennent du code PHP.</li>
+                <li><strong>Question 1 :</strong> La bonne réponse était "Lomé"</li>
+                <li><strong>Question 2 :</strong> La bonne réponse était "Institut Africain d'Informatique"</li>
                 <li><strong>Question 3 :</strong> La bonne réponse était "$nomVariable;" – En PHP, une variable est déclarée avec un signe dollar suivi de son nom.</li>
             </ul>
         </div>

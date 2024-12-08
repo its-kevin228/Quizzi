@@ -85,7 +85,14 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 100%;
+    gap: 10px; 
 }
+button[type="submit"],[type="reset"]{
+    display: flex;
+    justify-content: center;                 
+    margin-top: 20px; 
+}
+
 
 button:hover {
     background-color: #5a53e3;
