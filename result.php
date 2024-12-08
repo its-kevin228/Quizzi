@@ -2,7 +2,7 @@
 $score = 0;
 $correct_answers = [
     'q1' => 'a', 
-    'q2' => 'c',
+    'q2' => 'a',
     'q3' => 'c'
 ];
 
