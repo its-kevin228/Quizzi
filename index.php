@@ -16,7 +16,7 @@
 <div class="container">
         <h1>Bienvenue au Quiz de Monsieur PHP</h1>
         <form action="quiz.php" method="get">
-            <button type="submit">COMMENCER</button>
+            <button type="submit"><a href="quiz.php"></a> COMMENCER</button>
         </form>
     </div>
 </body>

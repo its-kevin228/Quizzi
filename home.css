@@ -6,8 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #ffffff; /* Fond blanc pour harmoniser */
-    overflow: hidden; /* Éviter les débordements */
+    background-color: #ffffff; 
+    overflow: hidden; 
 }
 
 /* Animation d'arrière-plan */
@@ -18,14 +18,14 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* Place derrière le contenu */
+    z-index: -1; 
 }
 
 .circle {
     position: absolute;
-    background: rgba(34, 151, 223, 0.8); /* Blanc semi-transparent */
+    background: rgba(71, 168, 228, 0.8); /* Blanc semi-transparent */
     border-radius: 50%;
-    animation: float 10s infinite ease-in-out;
+    animation: float 7s infinite ease-in-out;
 }
 
 .circle:nth-child(1) {
@@ -107,8 +107,9 @@ button {
     border: none;
     border-radius: 12px;
     cursor: pointer;
+    box-shadow: 6px 7px 10px rgb(205, 100, 100);
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #d0dfef;
 }
